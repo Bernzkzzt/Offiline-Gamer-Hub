@@ -32,7 +32,7 @@ Regras:
 
 ## Estrutura de módulos
 - **Menu principal**: cards grandes para acesso rápido
-- **Perfil/Login (local)**: nickname único, foto, bio, cor personalizada, tags (ADM para `Bernkzz`)
+- **Perfil/Login (local)**: nickname único, foto, bio, cor personalizada, tags
 - **Menu Gamer**: jogos, puzzle, atalhos, configurações
 - **Calendário**: eventos offline (mensal/semanal)
 - **MP3/MP4**: biblioteca local por pastas
@@ -60,3 +60,17 @@ Regras:
 ---
 
 > Este repositório começa com a documentação e estrutura de pastas para orientar a implementação offline.
+
+## Como exportar / baixar o APK
+1. Instale o Android Studio e o Android SDK.
+2. Abra o projeto no Android Studio.
+3. No menu, vá em **Build > Build Bundle(s) / APK(s) > Build APK(s)**.
+4. Após finalizar, clique na notificação ou localize o APK em:
+   `app/build/outputs/apk/debug/app-debug.apk`
+
+### Alternativa via terminal (Gradle)
+```bash
+./gradlew assembleDebug
+```
+O APK de debug ficará em:
+`app/build/outputs/apk/debug/app-debug.apk`
